@@ -1,0 +1,45 @@
+.topBarStyle {
+    background-color: #800000;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust the spacing between elements */
+    padding: 0 15px; /* Add padding to create space for the button */
+  }
+  
+  /* Your existing styles for facultyTextStyle, systemTextStyle, and imageStyle */
+  
+  .logoutButton {
+    background-color: #800000; /* Background color */
+    color: #F5BD34; /* Text color */
+    font-weight: 700;
+    border: 2px solid #F5BD34; /* Border color and width */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Add right margin to create space between the button and the text */
+  }
+  
+  .facultyTextStyle {
+    color: #F5BD34;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .systemTextStyle {
+    color: #F5BD34;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .imageStyle {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,58 @@
+/* 'SideBar.css' */
+
+.sidebar {
+    width: 250px; /* Set the width of the sidebar as per your design */
+    background-color: #800000; /* Background color for the sidebar */
+    color: #F5BD34; /* Text color in the sidebar */
+    position: fixed;
+    top: 120px;
+    left: 0;  /* Initially hide the sidebar off the screen */
+    border-right: 30px solid #fff; /* Adjust the border width as needed */
+    height: 100%;
+    overflow-y: auto; /* Add a scroll bar when content overflows the sidebar height */
+}
+
+.sidebar .box {
+    background-color: #800000;
+    color: white; /* Text color inside the box */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold; /* Make the text bold */
+    border: 2px solid white;
+    height: 25px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.sidebar .box i {
+    font-size: 24px; /* Adjust the icon size as needed */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Background color when hovering over a link */
+}
+
+/* Style for the Admin box */
+.admin-box {
+    background-color: #800000;
+    color: white; /* Text color inside the box */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold; /* Make the text bold */
+    border: 2px solid white;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add a 10px gap between icon and text */
+}
+
+.admin-box i {
+    font-size: 48px; /* Adjust the icon size as needed */
+}
