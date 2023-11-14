@@ -3,10 +3,11 @@ import TopBar from './components/Topbar';
 import SideBar from './components/SideBar';
 
 
+
  const App = () => {
   return (
     <div >
-     <TopBar/> 
+      <TopBar/>
      <SideBar/>
     </div>
   )

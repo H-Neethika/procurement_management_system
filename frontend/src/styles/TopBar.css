@@ -8,15 +8,14 @@
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust the spacing between elements */
-    padding: 0 15px; /* Add padding to create space for the button */
+    justify-content: space-between; 
+    padding: 0 15px; 
   }
   
-  /* Your existing styles for facultyTextStyle, systemTextStyle, and imageStyle */
   
   .logoutButton {
     background-color: #800000; /* Background color */
-    color: #F5BD34; /* Text color */
+    color: #F5BD34; 
     font-weight: 700;
     border: 2px solid #F5BD34; /* Border color and width */
     padding: 10px 20px;
@@ -40,6 +39,8 @@
   .imageStyle {
     width: 100px;
     height: 100px;
-    margin-right: 10px;
+    margin-right: -120px;
   }
   
+
+ 
