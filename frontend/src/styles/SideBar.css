@@ -98,3 +98,14 @@ label #cancel {
 #check:checked + label #cancel {
     left: 180px;
 }
+
+
+
+
+.topBarStyle {
+    transition: all .5s ease;
+}
+
+#check:checked ~ .topBarStyle {
+    transform: translateX(250px);
+}

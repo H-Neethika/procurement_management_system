@@ -43,4 +43,14 @@
   }
   
 
- 
+ /* 'TopBar.css' */
+/* ... (previous styles) */
+
+/* Move the top bar along with the sidebar */
+.topBarResponsive {
+  transition: all .5s ease;
+}
+
+#check:checked ~ .topBarResponsive {
+  transform: translateX(250px);
+}
