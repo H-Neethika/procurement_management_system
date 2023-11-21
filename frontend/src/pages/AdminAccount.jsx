@@ -13,6 +13,7 @@ const AdminAccount = () => {
 
   const handleCancel = () => {
     // Add your logic to cancel the changes
+    
     console.log('Changes cancelled.');
   };
 
@@ -21,14 +22,7 @@ const AdminAccount = () => {
       <div className='header' >
         Change Password
       </div>
-      <div className="input-container">
-        <label>Old Password                 : </label>
-        <input
-          type="password"
-          value={oldPassword}
-          onChange={(e) => setOldPassword(e.target.value)}
-        />
-      </div>
+     
       <div className="input-container">
         <label>New Password      : </label>
         <input
@@ -48,8 +42,11 @@ const AdminAccount = () => {
       <div className="button-container">
         <button onClick={handleSave}>Save</button>
         <button onClick={handleCancel}>Cancel</button>
+        
       </div>
     </div>
+    
+
   );
 };
 

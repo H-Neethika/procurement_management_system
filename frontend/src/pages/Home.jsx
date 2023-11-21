@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const AdminHome = () => {
+const Home = () => {
   return (
     <div>
       <p>Welcome to the Home page!</p>
-      <Link to="/adminaccount">
+      <Link to="/loginpage">
         <button>Login</button>
       </Link>
     </div>
   );
 };
 
-export default AdminHome;
+export default Home;
