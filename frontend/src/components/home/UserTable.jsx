@@ -12,11 +12,12 @@ const UserTable = ({ users }) => {
     <table className='reservation-table'>
       <thead>
         <tr>
-          <th className='reservation-header'>No</th>
+          
           <th className='reservation-header'>Role</th>
           <th className='reservation-header'>Email</th>
           <th className='reservation-header'>Username</th>
           <th className='reservation-header'>Password</th>
+          <th className='reservation-header'>Operations</th>
         </tr>
       </thead>
       <tbody>
@@ -29,13 +30,13 @@ const UserTable = ({ users }) => {
             <td className='reservation-data'>{user.Password}</td>
             <td className='reservation-data'>
               <div className='icon-link'>
-                <Link to={`/users/details/${user._id}`}>
+                <Link to={`/user/details/${user._id}`}>
                   <BsInfoCircle className='reservation-icon' />
                 </Link>
-                <Link to={`/users/edit/${user._id}`}>
+            {/*  <Link to={`/users/edit/${user._id}`}>
                   <AiOutlineEdit className='reservation-icon' />
-                </Link>
-                <Link to={`/users/delete/${user._id}`}>
+        </Link>  */}
+                <Link to={`/user/delete/${user._id}`}>
                   <MdOutlineDelete className='reservation-icon' />
                 </Link>
               </div>

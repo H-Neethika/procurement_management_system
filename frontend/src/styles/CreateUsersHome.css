@@ -57,3 +57,22 @@
     background-color: #ff1493; 
   }
   
+
+/* have to remove */
+
+  /* Add these styles to your CSS file */
+.delete-button,
+.update-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff0000; /* Choose your desired background color */
+  border-radius: 5px;
+}
+
+.delete-button:hover,
+.update-button:hover {
+  background-color: #cc0000; /* Choose a slightly different color for the hover effect */
+}

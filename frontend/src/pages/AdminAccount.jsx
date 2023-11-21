@@ -18,10 +18,19 @@ const AdminAccount = () => {
   };
 
   return (
+   
     <div className="admin-account-container">
       <div className='header' >
         Change Password
       </div>
+      <div className="input-container">
+        <label>Old Password      : </label>
+        <input
+          type="password"
+          value={oldPassword}
+          onChange={(e) => setOldPassword(e.target.value)}
+        />
+        </div>
      
       <div className="input-container">
         <label>New Password      : </label>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/CreateDepartments.css';
+import '../styles/CreateUsers.css';
 import { useState } from 'react';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 
 
-  const CreateDepartments = () => {
+  const CreateUsers = () => {
     const [Role, setRole] = useState('');
     const [Email, setEmail] = useState('');
     const [Username, setUsername] = useState('');
@@ -18,7 +18,7 @@ import { useSnackbar } from 'notistack';
     const { enqueueSnackbar } = useSnackbar();
     const Roles = ['Admin', 'User', 'Department', 'Lorry', 'Jeep'];
   
-    const handleSaveCreateDepartments = () => {
+    const handleSaveCreateUsers = () => {
       const data = {
         Role,
         Email,
@@ -27,10 +27,11 @@ import { useSnackbar } from 'notistack';
       };
       setLoading(true);
       axios
+       .post('http://localhost:8000/user/create', data)
         .then(() => {
           setLoading(false);
           enqueueSnackbar('Reservation is Created successfully', { variant: 'success' });
-          navigate('/createdepartmentshome');
+          navigate('/createusershome');
         })
         .catch((error) => {
           setLoading(false);
@@ -39,10 +40,15 @@ import { useSnackbar } from 'notistack';
         });
     };
   return (
+    <div>
+       <BackButton/>
+    
     <div className="admin-account-container">
+    
     <div className='header' >
       Create Your New User
     </div>
+    {loading ? <Spinner /> : ''}
     <div className="input-container">
     <label className='text-xl mr-4 text-gray-500'>Role</label>
           <select
@@ -90,14 +96,14 @@ import { useSnackbar } from 'notistack';
           <button
             className='p-3 bg-pink-500 text-white rounded-lg hover:bg-pink-700'
             style={{ width: '100px' }}
-            onClick={handleSaveCreateDepartments}
+            onClick={handleSaveCreateUsers}
           >
             Save
           </button>
         </div>
 
-      
+        </div> 
     </div>
   );
 }
-export default CreateDepartments;
+export default CreateUsers;

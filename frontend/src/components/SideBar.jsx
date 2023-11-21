@@ -27,11 +27,11 @@ export default function SideBar() {
                 <i className="fas fa-times" id="cancel"></i>
             </label>
             <ul>
-            <li><a href='#'><i className="fas fa-home" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Home</a></li>
-                <li><a href='#'><i className="fas fa-user-tag" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Admin Account</a></li>
+            <li><a href='/adminhome'><i className="fas fa-home" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Home</a></li>
+                <li><a href='/adminaccount'><i className="fas fa-user-tag" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Admin Account</a></li>
                 <li><a href='#'><i className="fas fa-file" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Generate Document</a></li>
                 <li><a href='#'><i className="fas fa-qrcode" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> View Document</a></li>
-                <li><a href='#'><i className="fas fa-building-columns" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Manage Departments</a></li>
+                <li><a href='/createusershome'><i className="fas fa-building-columns" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Manage Departments</a></li>
                 <li><a href='#'><i className="fas fa-shopping-cart" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Manage Suppliers</a></li>
                 <li><a href='#'><i className="fas fa-tasks" style={{ color: '#FFFFFF', marginRight: '10px' }}></i> Procurement Progress</a></li>
             
